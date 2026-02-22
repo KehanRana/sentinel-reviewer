@@ -1,6 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { GitHubService } from '../github/github.service';
-import { OpenAIService } from '../openai/openai.service';
+import { GitHubService } from '../github/github.service.js';
+import { OpenAIService } from '../openai/openai.service.js';
 
 @Injectable()
 export class ReviewService {

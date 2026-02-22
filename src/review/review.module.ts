@@ -1,7 +1,7 @@
 import { Module, forwardRef } from '@nestjs/common';
-import { ReviewService } from './review.service';
-import { GitHubModule } from '../github/github.module';
-import { OpenAIModule } from '../openai/openai.module';
+import { ReviewService } from './review.service.js';
+import { GitHubModule } from '../github/github.module.js';
+import { OpenAIModule } from '../openai/openai.module.js';
 
 @Module({
   imports: [forwardRef(() => GitHubModule), OpenAIModule],

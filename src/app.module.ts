@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { GitHubModule } from './github/github.module';
-import { OpenAIModule } from './openai/openai.module';
-import { ReviewModule } from './review/review.module';
-import configuration from './config/configuration';
+import { AppController } from './app.controller.js';
+import { AppService } from './app.service.js';
+import { GitHubModule } from './github/github.module.js';
+import { OpenAIModule } from './openai/openai.module.js';
+import { ReviewModule } from './review/review.module.js';
+import configuration from './config/configuration.js';
 
 @Module({
   imports: [

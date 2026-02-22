@@ -11,7 +11,7 @@ import {
 import { ConfigService } from '@nestjs/config';
 import { Webhooks } from '@octokit/webhooks';
 import { Request } from 'express';
-import { ReviewService } from '../review/review.service';
+import { ReviewService } from '../review/review.service.js';
 
 interface RawBodyRequest extends Request {
   rawBody?: Buffer;
